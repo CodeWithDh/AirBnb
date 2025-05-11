@@ -1,0 +1,19 @@
+<%- layout("/layouts/boilerplate.ejs") -%>
+<body>
+    <h3 style="margin-left:1rem;">All Listings : </h3>
+    <div class="listings">
+        <% for(listing of data){ %>
+            <a href="/listings/<%= listing.id %>" style="text-decoration: none;">
+                <div class="card " style="width: 20rem; height:22rem; border:none;">
+                <img src="<%= listing.image %>" class="card-img-top" alt="Place.png" style="height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= listing.title %></h5>
+                    <p class="card-text">₹ <%= listing.price.toLocaleString("en-IN") %> /night</p>
+                </div>
+                </div>
+            </a>
+            
+        <% } %>
+    </div>
+    
+</body> 

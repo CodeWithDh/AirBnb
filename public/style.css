@@ -1,0 +1,52 @@
+.navbar{
+    padding:1.5rem;
+    background-color: white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222;
+}
+
+.footer{
+    color:#222;
+    background-color: white;
+    font-weight: 500;
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    padding:0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    gap:1rem;
+}
+.f-socials{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.f-links a{
+    text-decoration: none;
+    color:black;
+}
+.f-links a:hover{
+    text-decoration: underline;
+}
+
+.listings{
+    padding:1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-decoration: none;
+}
