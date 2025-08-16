@@ -1,8 +1,11 @@
 import express from "express";
-const router=express.Router();
+const router = express.Router();
+import {allListings} from "../controller/listings.js"
 
-router.get("/",(req,res)=>{
-    res.render("home.ejs");
+
+router.get("/",async(req,res)=>{
+    let data=await allListings();
+    res.render("listings.ejs",{data});
 })
 
 export default router;
